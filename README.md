@@ -16,7 +16,7 @@ DRD-Portfolio/
     └── Diptiranjan-Das-CV.pdf
 ```
 
-## 📄 File Description
+## 📄 File Description 
 
 ### `index.html`
 
