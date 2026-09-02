@@ -207,7 +207,7 @@ if (backToTop) {
    CONTACT FORM
    ===================================== */
 
-const contactForm =
+/*const contactForm =
     document.getElementById("contact-form");
 
 const formMessage =
@@ -284,7 +284,7 @@ if (contactForm) {
         }
     );
 
-}
+}*/
 ```
 
 });

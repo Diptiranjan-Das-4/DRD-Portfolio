@@ -915,84 +915,67 @@
 
                 <!-- Contact Form -->
 
-                <form class="contact-form"
+                <form action="https://formspree.io/f/myeyjzvy"
+                    method="POST"
+                    class="contact-form"
                     id="contact-form">
 
                     <div class="form-row">
 
                         <div class="input-group">
+                            <label for="name">Your Name</label>
 
-                            <label for="name">
-                                Your Name
-                            </label>
-
-                            <input type="text"
-                                id="name"
-                                placeholder="Enter your name"
-                                required>
-
+                                <input type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required>
                         </div>
 
-
                         <div class="input-group">
-
-                            <label for="email">
-                                Your Email
-                            </label>
+                            <label for="email">Your Email</label>
 
                             <input type="email"
                                 id="email"
+                                name="email"
                                 placeholder="Enter your email"
                                 required>
-
                         </div>
 
                     </div>
 
-
                     <div class="input-group">
-
-                        <label for="subject">
-                            Subject
-                        </label>
+                        <label for="subject">Subject</label>
 
                         <input type="text"
-                            id="subject"
-                            placeholder="Enter subject"
-                            required>
-
+                        id="subject"
+                        name="subject"
+                        placeholder="Enter subject"
+                        required>
                     </div>
 
-
                     <div class="input-group">
+                        <label for="message">Message</label>
 
-                        <label for="message">
-                            Message
-                        </label>
-
-                        <textarea id="message"
+                            <textarea id="message"
+                            name="message"
                             rows="6"
                             placeholder="Write your message..."
                             required></textarea>
-
                     </div>
-
 
                     <button type="submit"
                         class="btn primary-btn send-btn">
 
-                        <i class="fa-solid fa-paper-plane"></i>
-
-                        Send Message
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
 
                     </button>
 
-
-                    <p class="form-message"
-                        id="form-message">
-                    </p>
+                    <p class="form-message" id="form-message"></p>
 
                 </form>
+                
 
             </div>
 
