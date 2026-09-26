@@ -2,6 +2,8 @@
 
 A responsive personal portfolio website for **Diptiranjan Das**, built using HTML, CSS, and JavaScript. The website is designed for both desktop and mobile screens and showcases personal information, education, technical skills, projects, and contact details.
 
+Go to this link for Preview:https://diptiranjan-das-4.github.io/DRD-Portfolio/
+
 ## 📁 Project Structure
 
 ```text
