@@ -636,138 +636,177 @@ color: var(--primary);
 }
 
 /* =========================================
-SKILLS
+   SKILLS
 ========================================= */
 
 .skills-section {
-background: var(--bg2);
+    background: var(--bg2);
 }
+
+
+/* ================= GRID ================= */
 
 .skills-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    /* Makes all cards the same height */
+    grid-auto-rows: 200px;
+
 }
+
+
+/* ================= SKILL CARD ================= */
 
 .skills-card {
-padding: 30px;
 
+    height: 200px;
 
-background: var(--card);
-border: 1px solid var(--border);
+    padding: 30px;
 
-transition: 0.3s;
+    background: var(--card);
 
+    border: 1px solid var(--border);
+
+    transition: 0.3s;
+
+    display: flex;
+
+    flex-direction: column;
 
 }
+
 
 .skills-card:hover {
-border-color: var(--primary);
-transform: translateY(-5px);
+
+    border-color: var(--primary);
+
+    transform: translateY(-5px);
+
 }
+
+
+/* ================= CARD HEADER ================= */
 
 .skill-card-header {
-display: flex;
-align-items: center;
-gap: 15px;
-margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
 }
+
 
 .skill-main-icon {
-width: 50px;
-height: 50px;
 
+    width: 50px;
 
-display: flex;
-align-items: center;
-justify-content: center;
+    height: 50px;
 
-background: rgba(0, 217, 255, 0.1);
+    flex-shrink: 0;
 
-color: var(--primary);
+    display: flex;
 
-font-size: 20px;
+    align-items: center;
 
+    justify-content: center;
+
+    background: rgba(0, 217, 255, 0.1);
+
+    color: var(--primary);
+
+    font-size: 20px;
 
 }
+
 
 .skill-card-header h3 {
-font-size: 18px;
+
+    font-size: 18px;
+
+    margin: 0;
+
 }
+
 
 .skill-card-header p {
-color: var(--muted);
-font-size: 12px;
-}
 
-.skill {
-margin-bottom: 20px;
-}
+    color: var(--muted);
 
-.skill-info {
-display: flex;
-justify-content: space-between;
+    font-size: 12px;
 
-
-margin-bottom: 7px;
-
-font-size: 13px;
-
+    margin: 5px 0 0;
 
 }
 
-.skill-info span:last-child {
-color: var(--primary);
-}
 
-.skill-bar {
-width: 100%;
-height: 6px;
-
-
-background: #1c2a3b;
-
-overflow: hidden;
-
-
-}
-
-.skill-progress {
-width: 0;
-height: 100%;
-
-
-background: var(--primary);
-
-transition: width 1s ease;
-
-
-}
+/* ================= TOOLS LIST ================= */
 
 .tools-list {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
 }
+
+
+/* ================= TOOL ================= */
 
 .tools-list span {
-padding: 8px 12px;
 
+    display: inline-flex;
 
-background: var(--bg);
+    align-items: center;
 
-border: 1px solid var(--border);
+    gap: 7px;
 
-color: var(--text);
+    padding: 8px 12px;
 
-font-size: 12px;
+    background: var(--bg);
 
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    font-size: 12px;
+
+    transition: 0.3s;
 
 }
+
+
+/* ================= TOOL ICON ================= */
 
 .tools-list i {
-color: var(--primary);
+
+    color: var(--primary);
+
 }
+
+
+/* ================= TOOL HOVER ================= */
+
+.tools-list span:hover {
+
+    border-color: var(--primary);
+
+    color: var(--primary);
+
+}
+
+
+
 
 /* =========================================
 PROJECTS
@@ -837,7 +876,7 @@ font-size: 20px;
 
 .project-tag {
 color: var(--primary);
-font-size: 11px;
+font-size: 15px;
 font-weight: bold;
 letter-spacing: 1px;
 }
@@ -871,45 +910,441 @@ font-size: 11px;
 
 }
 
+
 .project-meta {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
 
+    display: flex;
 
-margin-top: 20px;
+    flex-wrap: wrap;
 
-color: var(--muted);
+    gap: 20px;
 
-font-size: 11px;
+    margin-top: 20px;
 
+    color: var(--muted);
+
+    font-size: 15px;
+
+    font-weight: 500;
 
 }
 
 .project-meta i {
-color: var(--primary);
-}
 
-.experience-note {
-max-width: 700px;
+    color: var(--primary);
 
-
-margin: 50px auto 0;
-
-text-align: center;
-
+    font-size: 15px;
 
 }
 
-.experience-note i {
+.experience-note{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+}
+/* .experience-note i {
 color: var(--primary);
 font-size: 25px;
-}
+} */
 
 .experience-note p {
 color: var(--text);
 font-size: 18px;
-margin-top: 10px;
+margin-top: 50px;
+}
+
+
+
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.portfolio-projects {
+    background: var(--bg2);
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.portfolio-project-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.portfolio-project-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 18px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+
+}
+
+
+.portfolio-project-card:hover {
+
+    border-color: var(--primary);
+
+    transform: translateY(-5px);
+
+}
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.portfolio-project-number {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 20px;
+
+    font-size: 55px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    color: rgba(255, 255, 255, 0.035);
+
+    z-index: 1;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.portfolio-project-image {
+
+    width: 100%;
+
+    height: 270px;
+
+    overflow: hidden;
+
+    background: var(--bg);
+
+    border: 1px solid var(--border);
+
+    margin-bottom: 18px;
+
+}
+
+
+.portfolio-project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.portfolio-project-card:hover
+.portfolio-project-image img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.portfolio-project-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+}
+
+
+/* =========================================
+   PROJECT ICON
+========================================= */
+
+.portfolio-project-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    background: rgba(0, 217, 255, 0.1);
+
+    color: var(--primary);
+
+    font-size: 21px;
+
+}
+
+
+/* =========================================
+   PROJECT CATEGORY
+========================================= */
+
+.portfolio-project-tag {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--primary);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+/* =========================================
+   PROJECT TITLE
+========================================= */
+
+.portfolio-project-card h3 {
+
+    margin: 0 0 12px;
+
+    color: var(--text);
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+}
+
+
+/* =========================================
+   PROJECT DESCRIPTION
+========================================= */
+
+.portfolio-project-card p {
+
+    margin: 0 0 20px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.portfolio-project-tech {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.portfolio-project-tech span {
+
+    padding: 8px 12px;
+
+    background: var(--bg);
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    font-size: 11px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.portfolio-project-tech span:hover {
+
+    border-color: var(--primary);
+
+    color: var(--primary);
+
+}
+
+
+/* =========================================
+   VIEW PROJECT LINK
+========================================= */
+
+.portfolio-project-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: fit-content;
+
+    margin-top: auto;
+
+    color: var(--primary);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+}
+
+
+.portfolio-project-link i {
+
+    font-size: 14px;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.portfolio-project-link:hover {
+
+    color: var(--text);
+
+}
+
+
+.portfolio-project-link:hover i {
+
+    transform: translateX(6px);
+
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .portfolio-project-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .portfolio-project-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .portfolio-project-card {
+
+        padding: 16px;
+
+    }
+
+
+    .portfolio-project-image {
+
+        height: 230px;
+
+    }
+
+
+    .portfolio-project-card h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .portfolio-project-card p {
+
+        font-size: 13px;
+
+    }
+
+
+    .portfolio-project-number {
+
+        font-size: 45px;
+
+        top: 15px;
+
+        right: 15px;
+
+    }
+
 }
 
 /* =========================================

@@ -1,14 +1,6 @@
-/* =========================================
-DRD PORTFOLIO
-SCRIPT.JS
-========================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
-```
-/* =====================================
-   MOBILE MENU
-   ===================================== */
 
 const menuButton = document.getElementById("menu-btn");
 const navMenu = document.getElementById("nav-links");
@@ -285,6 +277,6 @@ if (contactForm) {
     );
 
 }*/
-```
+
 
 });
